@@ -150,17 +150,5 @@ Download.prototype.condenseFile = function(filename) {
     fs.writeFileSync(filename, fileBlob);
 };
 
-// Auxillary helper functions
-function download(url) {
-    var dl = window.dl = new Download(url, 67108864, 4);
-    dl.begin();
-    console.log('File download should have started, See the `Network` tab of Chrome Dev Tools');
-}
-
-function getFile() {
-    var dl = window.dl;
-    var url = dl.condenseFile();
-    window.location = url;
-}
 
 module.exports = Download;
