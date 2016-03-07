@@ -1,0 +1,29 @@
+{
+  "name": "superget",
+  "version": "0.0.0",
+  "description": "Fault-tolerant file downloader with support for concurrent segmented downloads",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "superget": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webglider/superget.git"
+  },
+  "author": "Midhul Varma",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/webglider/superget/issues"
+  },
+  "dependencies": {
+    "commander": "~2.9.0",
+    "request": "~2.69.0",
+    "concat-stream": "~1.5.1"
+  }
+}
