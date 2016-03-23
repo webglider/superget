@@ -24,6 +24,7 @@
   "dependencies": {
     "commander": "~2.9.0",
     "request": "~2.69.0",
-    "concat-stream": "~1.5.1"
+    "concat-stream": "~1.5.1",
+    "concat-files": "~0.1.0"
   }
 }
