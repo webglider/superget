@@ -22,11 +22,6 @@ program.version('0.0.1')
     var dsk = new Disk(directory, 'part');
     var dl = new Download(url, program.chunksize, program.concurrency, program.cookie, dsk);
 
-    // test cookie
-    if(program.cookie) {
-        console.log(program.cookie);
-    }
-
     dl.begin(function(x) {
         dsk.condenseFile('./' + program.output, function() {
             console.log('Download complete :)');
